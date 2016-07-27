@@ -1,0 +1,5 @@
+启发点：从首页点击登录，进入登录/注册界面，可以返回上一页。
+实现
+1、要实现返回的页面，点击返回时，可以隐藏当前JFrame，再构造一个新的---要返回的页面。
+2、进入下一个页面时，只做隐藏不dispose；要返回时，调用一个方法，让上一个JFrame。setVisiable(true)并且重绘frame.paint(frame.getGraphics());前提是在构造时要保留frame对象。
+

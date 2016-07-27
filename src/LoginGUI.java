@@ -47,6 +47,7 @@
          * Create the frame.
          */
         public LoginGUI() {
+        	super("Login");
             setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
             setBounds(100, 100, 650, 400);
             contentPane = new JPanel();
@@ -103,7 +104,8 @@
             back.addMouseListener(new MouseAdapter() {
                 @Override
                 public void mouseClicked(MouseEvent e) {
-                     IndexGUI.init();
+//                     IndexGUI.init();
+                	IndexGUI.showBack();
                      setVisible(false);
                 }
             });
